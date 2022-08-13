@@ -1,0 +1,24 @@
+.sidebar-container {
+    width: 13rem;
+    background-color: #040c1dd5;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 1.2rem;
+    height: 90vh;
+    padding: 2rem;
+    max-height: auto;
+}
+.sidebar-title {
+    color: white;
+}
+
+.icons {
+    color: #2ea3da
+}
+
+.sidebar-chips {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
