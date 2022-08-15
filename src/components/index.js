@@ -1,3 +1,5 @@
+import { SingleVideoBox } from "./singlevideobox/SingleVideoBox";
+
 export { WatchLaterBox } from "./watchlaterbox/WatchLaterBox";
 
 export { VideoListingBox } from "./videolistingbox/VideoListingBox";
@@ -19,4 +21,3 @@ export { Historybox } from "./historybox/Historybox";
 export { HeroHeader } from "./hero-header/HeroHeader";
 
 export { Card } from "./card/Card";
-

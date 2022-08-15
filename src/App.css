@@ -90,7 +90,7 @@ a {
 
 .video-container {
   color: white;
-  height: 90vh;
+  position: relative;
   display: flex;
 }
 
@@ -131,5 +131,10 @@ a {
 .icons {
   color: #2ea3da;
   margin-right: 0.6rem;
+  cursor: pointer;
+}
+
+.icon-outline-blue {
+  color: var(--primary-color);
   cursor: pointer;
 }
