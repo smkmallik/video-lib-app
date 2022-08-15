@@ -3,6 +3,8 @@
     justify-content: space-around;
     padding: 1rem;
     background-color: #070d1b;
+    position: sticky;
+    top: 0;
 }
 
 .nav-logo {

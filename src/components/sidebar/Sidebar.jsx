@@ -9,7 +9,6 @@ import HistoryIcon from '@mui/icons-material/History'
 
 const Sidebar = () => {
   return (
-    <div>
       <div className='sidebar-container'>
         <Link to='/'>
           <div className='sidebar-chips'>
@@ -48,7 +47,6 @@ const Sidebar = () => {
           </div>
         </Link>
       </div>
-    </div>
   )
 }
 

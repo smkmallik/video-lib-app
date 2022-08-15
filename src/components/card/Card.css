@@ -5,7 +5,7 @@
     flex-direction: column;
     gap: 5px;
     background-color: #070d1b;
-
+    border-radius: 16px;
 }
 
 .parent {
@@ -17,8 +17,10 @@
 }
 
 .card-img {
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
+    height: 15rem;
+    cursor: pointer;
 }
 
 .avatar-img {
@@ -34,14 +36,14 @@
 .card-sub-container {
     display: flex;
     gap: 10px;
-    padding: 0.5rem;
+    padding: 0.9rem;
     justify-content: space-around;
 
 }
 
 .card-sub-container2 {
     display: flex;
-    padding: 0.5rem;
+    padding: 0.6rem;
     gap: 10px;
     color: #909090;
 
@@ -49,7 +51,7 @@
 }
 
 .card-sub-container3 {
-    padding: 0.5rem;
+    padding: 0.6rem;
     color: #909090;
 
 
