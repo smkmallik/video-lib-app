@@ -1,3 +1,5 @@
+export { SingleVideoPage } from "./singlevideopage/SingleVideoPage";
+
 export { Watchlaterpage } from "./watchlaterpage/Watchlaterpage";
 
 export { VideoListingPage } from "./video-listing-page/VideoListingPage";
