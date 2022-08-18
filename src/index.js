@@ -9,6 +9,8 @@ import { AuthProvider } from './contexts/auth-context'
 import { LikeProvider } from './contexts/like-context'
 import { WatchLaterProvider } from './contexts/watch-later-context'
 import { HistoryProvider } from './contexts/history-context'
+import { CreatePlaylistProvider } from './contexts/playlist-context'
+
 
 // Call make Server
 makeServer()
@@ -16,17 +18,19 @@ makeServer()
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <HistoryProvider>
-        <WatchLaterProvider>
-          <LikeProvider>
-            <AuthProvider>
-              <VideoProvider>
-                <App />
-              </VideoProvider>
-            </AuthProvider>
-          </LikeProvider>
-        </WatchLaterProvider>
-      </HistoryProvider>
+      <CreatePlaylistProvider>
+        <HistoryProvider>
+          <WatchLaterProvider>
+            <LikeProvider>
+              <AuthProvider>
+                <VideoProvider>
+                  <App />
+                </VideoProvider>
+              </AuthProvider>
+            </LikeProvider>
+          </WatchLaterProvider>
+        </HistoryProvider>
+      </CreatePlaylistProvider>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

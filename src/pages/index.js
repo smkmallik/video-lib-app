@@ -1,3 +1,5 @@
+export { PlaylistVideo } from "./playlistvideo/PlaylistVideo";
+
 export { SingleVideoPage } from "./singlevideopage/SingleVideoPage";
 
 export { Watchlaterpage } from "./watchlaterpage/Watchlaterpage";
@@ -15,4 +17,3 @@ export { LikePage } from "./likepage/LikePage";
 export { LandingPage } from "./landingpage/LandingPage";
 
 export { HistoryPage } from "./historypage/HistoryPage";
-

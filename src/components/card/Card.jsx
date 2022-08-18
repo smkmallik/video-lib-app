@@ -12,6 +12,7 @@ import { useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { useHistory } from '../../contexts/history-context';
+import { usePlaylist } from '../../contexts/playlist-context';
 
 const Card = (props) => {
     const {item, isLike, isWatchLater} = props;
@@ -20,6 +21,7 @@ const Card = (props) => {
     const { watchLater, setWatchLater } = useWatchLater();
     const { history, setHistory } = useHistory();
     const navigate = useNavigate();
+    const { createPlaylistModal, setCreatePlaylistModal } = usePlaylist();
 
     useEffect(() => {
       user.token
@@ -160,6 +162,10 @@ const Card = (props) => {
       }
     }
 
+    const playlistHandler = () => {
+        setCreatePlaylistModal(item);
+    }
+
     return (
       <div>
         <div className='parent'>
@@ -198,7 +204,10 @@ const Card = (props) => {
                     />
                 )
               }
-              <CreateNewFolderIcon className='icons sidebar-icons' />
+              <CreateNewFolderIcon 
+                className='icons sidebar-icons'
+                onClick={playlistHandler} 
+              />
             </div>
             <div className='card-sub-container2'>
               <div className='card-channel-name'>{item.cardOwner}</div>
